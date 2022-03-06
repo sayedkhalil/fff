@@ -49,10 +49,10 @@ const fixed1=()=>{
 <Head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'></link>
-</Head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
 crossOrigin="anonymous"></script>
+</Head>
 <div className="divlarg d-none d-lg-block ">
 <nav className="navbar navbar-light bg-white">
   <div className="container">
@@ -126,7 +126,7 @@ crossOrigin="anonymous"></script>
 </div>
 <div className="fixed">
   <div className={`fixed-item rounded text-center fixed1 row ${activ}`}  id="fixed1">
-  <a className="bg-light text-success col-8 p-2" href={`https://wa.me/${ info.whats?info.whats:""}`}>{info.whats?info.whats:""}</a>
+  <a className="bg-light text-success col-8 p-2" href="https://api.whatsapp.com/send/?phone=966569204439&text&app_absent=0">{info.whats?info.whats:""}</a>
   <i onClick={fixed} className="fab fa-whatsapp col-4 bg-brand fa-2x p-1 text-light"></i>
    </div>
   <div className={`fixed-item rounded text-center fixed1 row ${activ1}`}>
