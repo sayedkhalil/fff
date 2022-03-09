@@ -126,11 +126,11 @@ crossOrigin="anonymous"></script>
 </div>
 <div className="fixed">
   <div className={`fixed-item rounded text-center fixed1 row ${activ}`}  id="fixed1">
-  <a className="bg-light text-success col-8 p-2" href="https://api.whatsapp.com/send/?phone=966569204439&text&app_absent=0">{info.whats?info.whats:""}</a>
+  <a className="bg-light text-success col-8 p-2" href="https://api.whatsapp.com/send/?phone=966569204439&text&app_absent=0">+966 56 920 4439</a>
   <i onClick={fixed} className="fab fa-whatsapp col-4 bg-brand fa-2x p-1 text-light"></i>
    </div>
   <div className={`fixed-item rounded text-center fixed1 row ${activ1}`}>
-  <a className="bg-light col-8 text-success p-2" href={`tel:   ${info.mob?info.mob:""} `}>{info.mob?info.mob:""}</a>
+  <a className="bg-light col-8 text-success p-2" href={`tel:  +966 56 920 4439:""} `}>+966 56 920 4439</a>
   <i onClick={fixed1} className="fas fa-phone col-4  bg-brand fa-2x p-1 text-light"></i>
     </div>
 </div>

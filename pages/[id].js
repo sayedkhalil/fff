@@ -92,7 +92,10 @@ crossOrigin="anonymous">
              <Image className="col-12 col-lg-3 border border-info p-1 pointer1" onClick={(e)=>handelrouter(e,item.code)}  loader={() => `${item.imges}?w=500px`} src={item.imges} unoptimized="false"    width={"500px"}
       height={"400px"}/>
             <h6 className=" ms-auto m-3 title-img"> {item.title} </h6>
+            <div className="inlin">         
+             <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send/?phone=+966 56 920 4439&text&app_absent=0"><img className="whats" src="/WhatsApp.svg.png"  alt="" /></a>
             <button type="button" className="btn btn-success" onClick={()=>oncart(item.code,item.title,item.imges)} >إضافة لطلب التسعير</button>
+            </div>
         </div>
         ))
     }           

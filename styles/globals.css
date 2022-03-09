@@ -126,3 +126,11 @@ a {
 .a22 {
   display: none;
 }
+.inlin {
+  display: flex;
+  width: 98%;
+  margin: auto;
+  justify-content: space-between;
+  font-size: smaller;
+  height: 40px;
+}
