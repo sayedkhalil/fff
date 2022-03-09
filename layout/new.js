@@ -55,7 +55,7 @@ crossOrigin="anonymous">
     <div className="row  d-block d-lg-none">
         {
         mob1.map((item)=>(
-            <div className="col-12 col-lg-3 p-1 " key={item.code} >
+            <div className="col-12 col-lg-3 p-4 " key={item.code} >
              <Image className="col-12 col-lg-3 border border-info p-1 pointer1" onClick={(e)=>handelrouter(e,item.code)}  loader={() => `${item.imges}?w=500px`} src={item.imges} unoptimized="false"    width={"500px"}
       height={"400px"}/>
             <h6 className=" ms-auto m-3 title-img"> {item.title} </h6>   
