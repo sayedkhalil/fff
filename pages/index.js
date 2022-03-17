@@ -22,6 +22,7 @@ export default function Home({getdata}) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet"></link>
         <link rel="icon" href={getdata.getinfo.logo} type="image/x-icon" />
+        <meta name="google-site-verification" content="_OtuybINzdg_u7HN4n2xCk83du_TC8CdaKcPR0p-2Bg" />
       </Head>
           <Cover data={getdata.getcov} />
           <NEw data={getdata.getnew} />
