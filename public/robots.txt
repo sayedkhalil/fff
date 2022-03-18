@@ -6,4 +6,4 @@ Allow: /
 Host: https://elfursan.com
 
 # Sitemaps
-Sitemap: https://elfursan.com/sitemap.xml
+Sitemap: https://elfursan.com/sitemap0.xml
