@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build ",
-    "start": "next start",
-    "postbuild": "next-sitemap --config next-sitemap.config.js"
+    "start": "next start"
   },
   "dependencies": {
     "firebase": "^9.6.6",
