@@ -4,13 +4,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build ",
-    "start": "next start"
-    
-   
+    "start": "next start",
+    "postbuild": "next-sitemap --config next-sitemap.js"
   },
   "dependencies": {
     "firebase": "^9.6.6",
     "next": "12.0.10",
+    "next-sitemap": "^2.5.10",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-responsive-carousel": "^3.2.22"
