@@ -126,11 +126,11 @@ crossOrigin="anonymous"></script>
 </div>
 <div className="fixed">
   <div className={`fixed-item rounded text-center fixed1 row ${activ}`}  id="fixed1">
-  <a className="bg-light text-success col-8 p-2" href="https://api.whatsapp.com/send/?phone=966569204439&text&app_absent=0">+966 56 920 4439</a>
+  <a className="bg-light text-success col-8 p-2" href="https://api.whatsapp.com/send/?phone=966566642792&text&app_absent=0">+966566642792</a>
   <i onClick={fixed} className="fab fa-whatsapp col-4 bg-brand fa-2x p-1 text-light"></i>
    </div>
   <div className={`fixed-item rounded text-center fixed1 row ${activ1}`}>
-  <a className="bg-light col-8 text-success p-2" href={`tel:  +966 56 920 4439:""} `}>+966 56 920 4439</a>
+  <a className="bg-light col-8 text-success p-2" href={`tel:  +966566642792:""} `}>+966566642792</a>
   <i onClick={fixed1} className="fas fa-phone col-4  bg-brand fa-2x p-1 text-light"></i>
     </div>
 </div>
@@ -146,25 +146,28 @@ crossOrigin="anonymous"></script>
 </nav>
 <div className="wrapper text-center">
   {info.face? <a href={info.face} className="icon p-2 facebook">
-    <div className="tooltip">Facebook</div>
-    <span><i className="fab fa-facebook-f"></i></span>
+    <div className="tooltip coloric">Facebook</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-facebook-f"></i></span>
   </a>:""}
   {info.twitter?<a href={info.twitter} className="icon  p-2 twitter">
-    <div className="tooltip">Twitter</div>
-    <span><i className="fab fa-twitter"></i></span>
+    <div className="tooltip coloric">Twitter</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-twitter"></i></span>
   </a>:""}
   {info.insta?<a href={info.insta} className="icon  p-2 instagram">
-    <div className="tooltip">Instagram</div>
-    <span><i className="fab fa-instagram"></i></span>
+    <div className="tooltip coloric">Instagram</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-instagram"></i></span>
   </a>:""}
  {info.snap?<a href={info.snap} className="icon  p-2 github">
-    <div className="tooltip">Github</div>
-    <span><i className="fab fa-snapchat"></i></span>
+    <div className="tooltip coloric">Github</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-snapchat"></i></span>
   </a>:""}
   {info.linked?<a href={info.linked} className="icon  p-2 youtube">
-    <div className="tooltip">Youtube</div>
-    <span><i className="fab fa-linkedin"></i></span>
+    <div className="tooltip coloric">Youtube</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-linkedin"></i></span>
   </a>:""}
+  <span className="ppp">forsancf</span>
+  <a  href="https://api.whatsapp.com/send/?phone=966566642792&text&app_absent=0"><i id="coloric"  className="fab fa-whatsapp  fa-2x "></i></a>
+  <span className="ppp">966566642792</span>
 </div>
 <div className="row justify-content-around">
     <div className="col-11 col-lg-5 ">
@@ -182,27 +185,30 @@ crossOrigin="anonymous"></script>
     <div className="col-11 col-lg-5 ">
     <h5 className="card-title text-end text-primary">تواصل معنا</h5>
     <ul className="row text-end list-unstyled">
+    <li className="col-12 text-lift">
+          <span className="text-dark">
+           <a  href="https://www.google.com.eg/maps/dir//طريق الملك عبدالعزيز الفرعي، الياسمين، الرياض 13326">
+           الياسمين طريق الملك عبدالعزيز مقابل المركز التشيكي           </a>
+          </span>
+        <i className="fas fa-map-marker-alt p-2"></i>
+          </li>
         <li className="col-12 text-lift">
           <span className="text-dark">
-           {info.adress?info.adress:""}
+           <a  href="https://www.google.com.eg/maps/dir//Cleaver+Burger+(كليڤر+برجر)%E2%80%AD/@24.7518803,46.6400711,16.74z?">
+           شارع التخصصي
+           </a>
           </span>
         <i className="fas fa-map-marker-alt p-2"></i>
           </li>
           <li className="col-12 text-lift">
           <span className="text-dark">
-           {info.tele?info.tele:""}
+           <a href="tel:+966566642792">966566642792</a>
           </span>
           <i className="fas fa-phone-square-alt p-2"></i>
           </li>
-          <li className="col-12 text-lift p-2">
+         <li className="col-12 text-lift">
           <span className="text-dark">
-           {info.tele?info.tele:""}
-          </span>
-          <i className="fas fa-mobile p-2"></i>
-          </li>
-          <li className="col-12 text-lift">
-          <span className="text-dark">
-           {info.email?info.email:""}
+           <a href="mailto:forsancf@gmail.com ">forsancf@gmail.com </a>
           </span>
           <i className="fas fa-at p-2"></i>
           </li>

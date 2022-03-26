@@ -134,3 +134,12 @@ a {
   font-size: smaller;
   height: 40px;
 }
+#coloric {
+  color: #88b842;
+}
+.ppp {
+  padding: 15px;
+  font-size: large;
+  font-weight: bold;
+  color: #296ba7;
+}
