@@ -126,11 +126,11 @@ crossOrigin="anonymous"></script>
 </div>
 <div className="fixed">
   <div className={`fixed-item rounded text-center fixed1 row ${activ}`}  id="fixed1">
-  <a className="bg-light text-success col-8 p-2" href="https://api.whatsapp.com/send/?phone=966566642792&text&app_absent=0">+966566642792</a>
+  <a className="bg-light text-success col-8 p-2" href="https://api.whatsapp.com/send/?phone=966566642792&text&app_absent=0">0569204439</a>
   <i onClick={fixed} className="fab fa-whatsapp col-4 bg-brand fa-2x p-1 text-light"></i>
    </div>
   <div className={`fixed-item rounded text-center fixed1 row ${activ1}`}>
-  <a className="bg-light col-8 text-success p-2" href={`tel:  +966566642792:""} `}>+966566642792</a>
+  <a className="bg-light col-8 text-success p-2" href={`tel:  0569204439:""} `}>0569204439</a>
   <i onClick={fixed1} className="fas fa-phone col-4  bg-brand fa-2x p-1 text-light"></i>
     </div>
 </div>
@@ -202,7 +202,7 @@ crossOrigin="anonymous"></script>
           </li>
           <li className="col-12 text-lift">
           <span className="text-dark">
-           <a href="tel:+966566642792">966566642792</a>
+           <a href="tel:0569204439">966566642792</a>
           </span>
           <i className="fas fa-phone-square-alt p-2"></i>
           </li>
