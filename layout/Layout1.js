@@ -166,8 +166,8 @@ crossOrigin="anonymous"></script>
     <span><i id="coloric" className="fab coloric fa-2x fa-linkedin"></i></span>
   </a>:""}
   <span className="ppp">forsancf</span>
-  <a  href="https://api.whatsapp.com/send/?phone=966566642792&text&app_absent=0"><i id="coloric"  className="fab fa-whatsapp  fa-2x "></i></a>
-  <span className="ppp">966566642792</span>
+  <a  href="https://api.whatsapp.com/send/?phone=0569204439&text&app_absent=0"><i id="coloric"  className="fab fa-whatsapp  fa-2x "></i></a>
+  <span className="ppp">0569204439</span>
 </div>
 <div className="row justify-content-around">
     <div className="col-11 col-lg-5 ">
@@ -202,7 +202,7 @@ crossOrigin="anonymous"></script>
           </li>
           <li className="col-12 text-lift">
           <span className="text-dark">
-           <a href="tel:0569204439">966566642792</a>
+           <a href="tel:0569204439">0569204439</a>
           </span>
           <i className="fas fa-phone-square-alt p-2"></i>
           </li>
