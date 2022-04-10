@@ -147,26 +147,26 @@ crossOrigin="anonymous"></script>
 <div className="wrapper text-center">
   {info.face? <a href={info.face} className="icon p-2 facebook">
     <div className="tooltip coloric">Facebook</div>
-    <span><i id="coloric" className="fab coloric fa-2x fa-facebook-f"></i></span>
+    <span><i id="coloric" className="fab coloric fa-1x fa-facebook-f"></i></span>
   </a>:""}
   {info.twitter?<a href={info.twitter} className="icon  p-2 twitter">
     <div className="tooltip coloric">Twitter</div>
-    <span><i id="coloric" className="fab coloric fa-2x fa-twitter"></i></span>
+    <span><i id="coloric" className="fab coloric fa-1x fa-twitter"></i></span>
   </a>:""}
   {info.insta?<a href={info.insta} className="icon  p-2 instagram">
     <div className="tooltip coloric">Instagram</div>
-    <span><i id="coloric" className="fab coloric fa-2x fa-instagram"></i></span>
+    <span><i id="coloric" className="fab coloric fa-1x fa-instagram"></i></span>
   </a>:""}
  {info.snap?<a href={info.snap} className="icon  p-2 github">
     <div className="tooltip coloric">Github</div>
-    <span><i id="coloric" className="fab coloric fa-2x fa-snapchat"></i></span>
+    <span><i id="coloric" className="fab coloric fa-1x fa-snapchat"></i></span>
   </a>:""}
   {info.linked?<a href={info.linked} className="icon  p-2 youtube">
     <div className="tooltip coloric">Youtube</div>
-    <span><i id="coloric" className="fab coloric fa-2x fa-linkedin"></i></span>
+    <span><i id="coloric" className="fab coloric fa-1x fa-linkedin"></i></span>
   </a>:""}
   <span className="ppp">forsancf</span>
-  <a  href="https://api.whatsapp.com/send/?phone=0569204439&text&app_absent=0"><i id="coloric"  className="fab fa-whatsapp  fa-2x "></i></a>
+  <a  href="https://api.whatsapp.com/send/?phone=0569204439&text&app_absent=0"><i id="coloric"  className="fab fa-whatsapp  fa-1x "></i></a>
   <span className="ppp">0569204439</span>
 </div>
 <div className="row justify-content-around">
