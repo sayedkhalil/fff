@@ -77,7 +77,7 @@ const Product = ({item}) => {
        <p className="font-weight-bold text-center">{product.des}</p> 
     </div>
     <button onClick={oncart} type="button" className="btn btn-success mt-3">إضافة لطلب التسعير</button>
-    <a className="btn btn-light mt-3 mx-2" href="https://api.whatsapp.com/send/?phone=0569204439&text&app_absent=0"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل واتساب</a>
+    <a className="btn btn-light mt-3 mx-2" href="https://api.whatsapp.com/send/?phone=‪056 664 2792‬‏&text&app_absent=0"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل واتساب</a>
     <h3 className="col-12 col-lg-3 title ms-auto mt-3">منتجات مشابهة</h3>
     <div className="row">
     {

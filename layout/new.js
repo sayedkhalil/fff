@@ -60,7 +60,7 @@ crossOrigin="anonymous">
       height={"400px"}/>
             <h6 className=" ms-auto m-3 title-img"> {item.title} </h6>   
             <div className="inlin">         
-             <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send/?phone=0569204439&text&app_absent=0"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل</a>
+             <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send/?phone=‪056 664 2792‬‏&text&app_absent=0"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل</a>
             <button type="button" className="btn btn-success" onClick={()=>oncart(item.code,item.title,item.imges)} >إضافة لطلب التسعير</button>
             </div>
          </div>
@@ -77,7 +77,7 @@ crossOrigin="anonymous">
       height={"400px"}/>
             <h6 className=" ms-auto m-3 title-img"> {item.title} </h6>            
             <div className="inlin">         
-             <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send/?phone=0569204439&text&app_absent=0"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل</a>
+             <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send/?phone=‪056 664 2792‬‏&text&app_absent=0"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل</a>
             <button type="button" className="btn btn-success" onClick={()=>oncart(item.code,item.title,item.imges)} >إضافة لطلب التسعير</button>
             </div>
         </div>
