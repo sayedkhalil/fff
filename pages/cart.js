@@ -85,7 +85,7 @@ const Cart = () => {
 </div>
 < input type="submit" className="btn btn-success my-3"value="إضافة لطلب التسعير" onSubmit={onsend}/>
 </form>
-    <a className="btn btn-light my-3 mx-2" href="https://api.whatsapp.com/send/?phone=966566642792&text&app_absent=0"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل واتساب</a>
+    <a className="btn btn-light my-3 mx-2" href="https://api.whatsapp.com/send?phone=966566642792"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل واتساب</a>
     </div>
     
     </div>
