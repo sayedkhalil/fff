@@ -178,3 +178,14 @@ background-attachment: fixed;
 .rela{
   position: relative;
 }
+.dfee{
+  position: absolute;
+  bottom:120px;
+  left: 180px;
+}
+.call{
+  display: block;
+}
+.discall{
+  display: none;
+}

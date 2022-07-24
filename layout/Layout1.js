@@ -31,6 +31,7 @@ const [category2,setcategory2]=useState([]);
 const [category,setcategory]=useState([]);
 const [info,setinfo]=useState({});
 const[activ,setactiv]=useState('')
+const[call,setcall]=useState('call')
 const[activ1,setactiv1]=useState('')
 const[nav,setnav]=useState("nav-side")
 
@@ -42,6 +43,9 @@ const fixed1=()=>{
  }
  const onnave=()=>{
    nav=="nav-side-active"?setnav("nav-side"):setnav("nav-side-active")
+ }
+ const onncal=()=>{
+  call=="call"?setcall("discall"):setcall("call")
  }
 
   return (  
@@ -56,7 +60,7 @@ crossOrigin="anonymous"></script>
 <div className="divlarg d-none d-lg-block ">
 <nav className="navbar navbar-light bg-white">
   <div className="container">
-  <Link href='/cart'>
+  {/* <Link href='/cart'>
     <a className="navbar-brand" >
          <span className="nof">{appState.length?appState.length:""}</span>
      <img src="/cart.svg" alt="" width="50" height="30" className="d-inline-block align-text-top"/>
@@ -66,7 +70,38 @@ crossOrigin="anonymous"></script>
     <a className="navbar-brand" href="#">
       <img src={info.logo} alt="" width="100" height="70" className="d-inline-block align-text-top"/>
     </a>
+    </Link> */}
+    <div className="wrapper text-center">
+  {info.face? <a href={info.face} className="icon p-1 facebook">
+    <div className="tooltip coloric">Facebook</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-facebook-f"></i></span>
+  </a>:""}
+  {info.twitter?<a href={info.twitter} className="icon  p-1 twitter">
+    <div className="tooltip coloric">Twitter</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-twitter"></i></span>
+  </a>:""}
+  {info.insta?<a href={info.insta} className="icon  p-1 instagram">
+    <div className="tooltip coloric">Instagram</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-instagram"></i></span>
+  </a>:""}
+ {info.snap?<a href={info.snap} className="icon  p-1 github">
+    <div className="tooltip coloric">Github</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-snapchat"></i></span>
+  </a>:""}
+  {info.linked?<a href={info.linked} className="icon  p-1 youtube">
+    <div className="tooltip coloric">Youtube</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-linkedin"></i></span>
+  </a>:""}
+  <span className="ppp">forsancf</span>
+  <a  href="https://api.whatsapp.com/send?phone=966566642792"><i id="coloric"  className="fab fa-whatsapp  fa-2x "></i></a>
+  <a className="ppp" href={`tel:0566642792}`}>056 664 2792</a>
+</div>
+<Link href={`/`}>
+    <a className="navbar-brand" href="/">
+      <img src={info.logo} alt="" width="100" height="70" className="d-inline-block align-text-top"/>
+    </a>
     </Link>
+
   </div>
 </nav>
 <ul className={`nav justify-content-center ${styles.navdesk}`}>
@@ -95,12 +130,14 @@ crossOrigin="anonymous"></script>
 </nav>
 <nav className={`navbar navbar-expand-lg navbar-light bg-light ${styles.navmob}`}>
   <div className="container-fluid">
-   <Link href='/cart'>
+   {/* <Link href='/cart'>
     <a className="navbar-brand" >
          <span className="nof">{appState.length?appState.length:""}</span>
      <img src="/cart.svg" alt="" width="50" height="30" className="d-inline-block align-text-top"/>
         </a>
-        </Link>
+        </Link> */}
+
+     <button className="btn btn-secondary btn-sm"onClick={onncal} >اتصل بنا </button>  
     <button className="navbar-toggler" type="button" onClick={onnave}>
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -123,6 +160,31 @@ crossOrigin="anonymous"></script>
     </div>
   </div>
 </nav>
+</div>
+<div className={`wrapper p-1 ${call} text-center`}>
+  {info.face? <a href={info.face} className="icon p-1 facebook">
+    <div className="tooltip coloric">Facebook</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-facebook-f"></i></span>
+  </a>:""}
+  {info.twitter?<a href={info.twitter} className="icon  p-1 twitter">
+    <div className="tooltip coloric">Twitter</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-twitter"></i></span>
+  </a>:""}
+  {info.insta?<a href={info.insta} className="icon  p-1 instagram">
+    <div className="tooltip coloric">Instagram</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-instagram"></i></span>
+  </a>:""}
+ {info.snap?<a href={info.snap} className="icon  p-1 github">
+    <div className="tooltip coloric">Github</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-snapchat"></i></span>
+  </a>:""}
+  {info.linked?<a href={info.linked} className="icon  p-1 youtube">
+    <div className="tooltip coloric">Youtube</div>
+    <span><i id="coloric" className="fab coloric fa-2x fa-linkedin"></i></span>
+  </a>:""}
+  <span className="ppp">forsancf</span>
+  <a  href="https://api.whatsapp.com/send?phone=966566642792"><i id="coloric"  className="fab fa-whatsapp  fa-2x "></i></a>
+  <a className="ppp" href={`tel:0566642792}`}>056 664 2792</a>
 </div>
 <div className="fixed">
   <div className={`fixed-item rounded text-center fixed1 row ${activ}`}  id="fixed1">

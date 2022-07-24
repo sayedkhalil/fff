@@ -14,7 +14,7 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/
 
 export default function Home({getdata}) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>{getdata.getinfo.name}</title>
         <meta name="description" content={getdata.getinfo.des} />
@@ -26,12 +26,13 @@ export default function Home({getdata}) {
         <meta name="google-site-verification" content="_OtuybINzdg_u7HN4n2xCk83du_TC8CdaKcPR0p-2Bg" />
       </Head>
           <Cover data={getdata.getcov} />
+          <div className={styles.container}>
           <NEw data={getdata.getnew} />
           <About data={getdata.getinfo}/>
           <Productes data={getdata.products} />
           <Partener data={getdata.getpart}/>
           <Opnion data={getdata.getopn}/>
-           
+          </div>
     </div>
   )
 }

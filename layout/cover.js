@@ -16,7 +16,7 @@ const Cover = (props) => {
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
 crossOrigin="anonymous">
 </script>
-<Carousel infiniteLoop="true" autoPlay={true}	showThumbs={false}>
+<Carousel infiniteLoop="true" autoPlay={true} interval={5000} showStatus={false}	showThumbs={false}>
                
                   { props.data.map((item) => (
              <div key={item}>
@@ -24,7 +24,8 @@ crossOrigin="anonymous">
              </div>
             ))}
               </Carousel>
-              <a className="btn btn-primary dfe" href="https://drive.google.com/file/d/1Nga38UIB2yQCUrH3BvVUSTRZsx1wL7_1/view?usp=sharing" download>تحميل بروفايل الشركة</a>
+              <a className="btn btn-success btn-sm d-block d-lg-none dfe" href="https://drive.google.com/file/d/1Nga38UIB2yQCUrH3BvVUSTRZsx1wL7_1/view?usp=sharing" download>تحميل بروفايل الشركة</a>
+              <a className="btn btn-success btn-lg d-none d-lg-block d-xl-block dfee" href="https://drive.google.com/file/d/1Nga38UIB2yQCUrH3BvVUSTRZsx1wL7_1/view?usp=sharing" download>تحميل بروفايل الشركة</a>
 
 </div>
     );

@@ -62,7 +62,6 @@ crossOrigin="anonymous">
             <h6 className=" ms-auto m-3 title-img"> {item.title} </h6>
              <div className="inlin">         
              <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send?phone=966566642792"><img className="whats" src="/WhatsApp.svg.png"  alt="" /></a>
-            <button type="button" className="btn btn-success" onClick={()=>oncart(item.code,item.title,item.imges)} >إضافة لطلب التسعير</button>
             </div>
         </div>
         ))
@@ -79,7 +78,6 @@ crossOrigin="anonymous">
             <h6 className=" ms-auto m-3 title-img"> {item.title} </h6>
              <div className="inlin">         
              <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send?phone=966566642792"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل</a>
-            <button type="button" className="btn btn-success" onClick={()=>oncart(item.code,item.title,item.imges)} >إضافة لطلب التسعير</button>
             </div>
         </div>
         ))

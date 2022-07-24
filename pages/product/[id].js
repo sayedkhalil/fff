@@ -76,7 +76,6 @@ const Product = ({item}) => {
     <div className="col-12 col-lg-8 mx-auto mt-2 border border-success rounded p-4">
        <p className="font-weight-bold text-center">{product.des}</p> 
     </div>
-    <button onClick={oncart} type="button" className="btn btn-success mt-3">إضافة لطلب التسعير</button>
     <a className="btn btn-light mt-3 mx-2" href="https://api.whatsapp.com/send?phone=966566642792"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل واتساب</a>
     <h3 className="col-12 col-lg-3 title ms-auto mt-3">منتجات مشابهة</h3>
     <div className="row">
@@ -86,7 +85,6 @@ const Product = ({item}) => {
              <Image className="col-12 col-lg-3 border border-info p-1 pointer1" onClick={(e)=>handelrouter(e,item.code)}  loader={() => `${item.imges}?w=500px`} src={item.imges} unoptimized="false"    width={"500px"}
       height={"400px"}/>
             <h6 className=" ms-auto m-3 title-img"> {item.title} </h6>
-            <button type="button" className="btn btn-success" onClick={()=>oncart(item.code,item.title)} >إضافة لطلب التسعير</button>
         </div>
         ))
     }
