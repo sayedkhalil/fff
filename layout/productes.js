@@ -12,7 +12,7 @@ const Productes = (props) => {
     const mob =props.data? props.data:[]
     const mob1= mob.length>4?mob.slice(0,4):mob
     const desk =props.data? props.data:[]
-    const desk1= desk.length>9?desk.slice(0,9):desk
+    const desk1= desk.length>9?desk.slice(0,8):desk
     const [appState, setAppState] = useAppContext();
     const router = useRouter()
     useEffect(async()=>{
@@ -42,7 +42,7 @@ const Productes = (props) => {
 
         </Head>
         <div className="row w-100">
-    <h4 className="col-12 col-lg-3 title ms-auto">المنتجات</h4>
+    <h4 className="col-12 title ms-auto"> من أعمالنا..أسعدت عملائنا</h4>
 
 </div>
 
@@ -51,18 +51,8 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 crossOrigin="anonymous">
 </script>
  <div className="row">
-  <div className="row col-12 col-lg-3 ">
-  <ul className="row text-center list-unstyled wid">
-  { category.map((item) => (
-       <li className="col-3 my-2  col-lg-12" key={item.name}>
-             <Link href={`/${item.name}`}>
-    <a className="text-decoration-none text-primary" >{item.name}</a>
-             </Link>
-       </li>
-            ))}      
-  </ul>
-  </div>
-  <div className="row col-12 col-lg-9 ">
+  
+  <div className="row col-12 col-lg-12 ">
   <div className="row col-12  d-block d-lg-none">
         {
         mob1.map((item)=>(
@@ -83,7 +73,7 @@ crossOrigin="anonymous">
     <div className="row ">
         {
        desk1.map((item)=>(
-            <div className="col-4 my-2" key={item.code} >
+            <div className="col-3 my-2" key={item.code} >
              <Image className="border border-info p-1 pointer1" onClick={(e)=>handelrouter(e,item.code)} unoptimized="false"  loader={() => item.imges} src={item.imges}   width={"500px"}
       height={"400px"}/>
             <h6 className=" ms-auto m-3 title-img"> {item.title} </h6>

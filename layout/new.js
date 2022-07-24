@@ -36,7 +36,7 @@ const NEw = (props) => {
  
   
     return (  
-        <div className="mt-5">
+        <div className="mt-3">
         <Head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
 
@@ -48,41 +48,78 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
 crossOrigin="anonymous">
 </script>
 <div className="row w-100">
-    <h4 className="col-12 col-lg-3 title ms-auto"> أحدث العروض</h4>
+    <h4 className="col-12 col-lg-12 title ms-auto">متخصصون في المجالات التالية</h4>
 
 </div>
 <div  >
-    <div className="row  d-block d-lg-none">
-        {
-        mob1.map((item)=>(
-            <div className="col-12 col-lg-3 p-4 " key={item.code} >
-             <Image className="col-12 col-lg-3 border border-info p-1 pointer1" onClick={(e)=>handelrouter(e,item.code)}  loader={() => `${item.imges}?w=500px`} src={item.imges} unoptimized="false"    width={"500px"}
-      height={"400px"}/>
-            <h6 className=" ms-auto m-3 title-img"> {item.title} </h6>   
-            <div className="inlin">         
-             <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send?phone=966566642792"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل</a>
-            <button type="button" className="btn btn-success" onClick={()=>oncart(item.code,item.title,item.imges)} >إضافة لطلب التسعير</button>
-            </div>
-         </div>
-        ))
-    }
 
-    </div>
-    <div className="d-none d-lg-block d-xl-block">
+    <div className="">
     <div className="row ">
-        {
-       desk1.map((item)=>(
-            <div className="col-3" key={item.code} >
-             <Image className="border border-info p-1 pointer1" onClick={(e)=>handelrouter(e,item.code)} unoptimized="false"  loader={() => item.imges} src={item.imges}   width={"500px"}
+       
+            <div className="col-12 col-lg-3 p-2"  >
+             <Image className=" p-0 mb-0 border border-info "  unoptimized="false"  loader={() => "sht.jpg"} src={"alm.jpg"}   width={"500px"}
       height={"400px"}/>
-            <h6 className=" ms-auto m-3 title-img"> {item.title} </h6>            
+               <div className="p-2 mt-0 border border-info bg-li"  >
+            <h5 className=" text-center text-dark"> upvc أعمال الألمونيوم و </h5> 
+            <p className="text-center">
+            تصنيع و توريد و تركيب نوافذ المنيوم وأبواب المنيوم بكافة الأعمال الداخلية للمباني
+             وتشمل النوافذ بمختلف استخداماتها من نوافذ سحاب و قلاب وثابت والفصلي 
+            , كما تشمل الأبواب بجميع أنواعها مثل الأبواب السحاب و الأبواب المفصلية 
+            و الأبواب المروحية وبكافة القطاعات المختلفة للألمنيوم
+</p>
+
             <div className="inlin">         
              <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send?phone=966566642792"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل</a>
-            <button type="button" className="btn btn-success" onClick={()=>oncart(item.code,item.title,item.imges)} >إضافة لطلب التسعير</button>
+            </div>
             </div>
         </div>
-        ))
-    }
+        <div className="col-12 col-lg-3 p-2"  >
+             <Image className=" p-0 mb-0 border border-info "  unoptimized="false"  loader={() => "str.jpg"} src={"str.jpg"}   width={"500px"}
+      height={"400px"}/>
+               <div className="p-2 mt-0 border border-info bg-li"  >
+            <h5 className=" text-center text-dark"> استركشر - زجاج الواجهات</h5> 
+            <p className="text-center">
+            متخصصون في تركيب واجهات المباني بألواح الزجاج المثبتة على قطاعات ألمنيوم
+             حيث تتميز واجهات الزجاج الإنشائي استركشر بمقاومة أحمال الرياح و تسلل المياة و أي عوامل جوية وربط كل طوابق
+              المبنى بشكل مستمر و إكسابه جمالية إضافية بما يقدمه من أشكال وأنضمة مختلفة
+              </p>
+
+            <div className="inlin">         
+             <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send?phone=966566642792"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل</a>
+            </div>
+            </div>
+        </div>
+        <div className="col-12 col-lg-3 p-2"  >
+             <Image className=" p-0 mb-0 border border-info "  unoptimized="false"  loader={() => "hde.jpg"} src={"hde.jpg"}   width={"500px"}
+      height={"400px"}/>
+               <div className="p-2 mt-0 border border-info bg-li"  >
+            <h5 className=" text-center text-dark"> أعمال الحديد -ستانلس ستيل</h5> 
+            <p className="text-center">
+           ،متخصصون في تركيب وتوريد  الأبواب الحديدية بأحدث التصميمات الحديثة مع مراعاة المتانة والصلابة والقوة في التصميم 
+             احصل على درابزين سلم استانلس المقاوم للصدأ المصنوع طبقا للمواصفات العالمية 
+، حماية الشبابيك ستانلس ستيل توفر لك الحماية الكامل و تحمي اطفالك ومنزلك              </p>
+
+            <div className="inlin">         
+             <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send?phone=966566642792"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل</a>
+            </div>
+            </div>
+        </div>
+        <div className="col-12 col-lg-3 p-2"  >
+             <Image className=" p-0 mb-0 border border-info "  unoptimized="false"  loader={() => "alm.jpg"} src={"sht.jpg"}   width={"500px"}
+      height={"400px"}/>
+               <div className="p-2 mt-0 border border-info bg-li"  >
+            <h5 className=" text-center text-dark"> نوافذ الشتر</h5> 
+            <p className="text-center">نوفر أفضل وأرقى شترات الرول المتحركة اليدوية 
+            والكهربائية يتم تصميمها وتركيبها بطرق مبتكرة 
+            ورائعة بحيث يكون صندوق المحرك من خارج النافذة أو من الجهة الداخلية بمناظر راقية وحديثة .
+            حيث اننا نتميز بتقديم افضل المواصفات والمواد المستخدمة في اعمال الشتر في السوق المحلي والعالمي</p>
+
+            <div className="inlin">         
+             <a className="btn btn-light  mx-2 " href="https://api.whatsapp.com/send?phone=966566642792"><img className="whats" src="/WhatsApp.svg.png"  alt="" />تواصل</a>
+            </div>
+            </div>
+        </div>
+       
     </div>
     </div>
 

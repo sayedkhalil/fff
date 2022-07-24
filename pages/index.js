@@ -18,6 +18,7 @@ export default function Home({getdata}) {
       <Head>
         <title>{getdata.getinfo.name}</title>
         <meta name="description" content={getdata.getinfo.des} />
+        <meta name="keywords" content={getdata.getinfo.key} />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet"></link>
