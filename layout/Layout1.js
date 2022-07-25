@@ -124,7 +124,7 @@ crossOrigin="anonymous"></script>
 <nav className="navbar navbar-light bg-white">
   <div className="container">
     <a className="navbar-brand mx-auto" href="/">
-      <img src="/logo.png" alt="" width="100" height="70" className="d-inline-block align-text-top"/>
+      <img src={info.logo} alt="" width="100" height="70" className="d-inline-block align-text-top"/>
     </a>
   </div>
 </nav>
