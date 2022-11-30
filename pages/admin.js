@@ -352,6 +352,7 @@ return (
 <title>مصنع فرسان الإنشاءات  للصناعة</title>
    <link rel="icon" href="wew.png" type="image/x-icon" />
         </Head>
+        <div  className="w-100 d-none d-md-block">
 <div className="row w-100">
     <h4 className="col-12 col-lg-3 title ms-auto">لوحة التحكم</h4>
 </div>
@@ -695,6 +696,10 @@ crossOrigin="anonymous">
 
  </div>
   </div>
+</div>
+</div>
+<div className="w-100 h-100 d-block d-md-none">
+ <h3 className="text-center text-light bg-danger p-5 m-5">لايمكن فتح هذه الصفحة على الجوال</h3>
 </div>
 </div>
 </AuthRoute>

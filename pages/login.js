@@ -24,7 +24,8 @@ const Login = () => {
     const infoSnap = await getDoc(docRef)
     if(infoSnap.data().email==mail){
       localStorage.setItem("uid",infoSnap.data().uid)
-      router.push('/admin')
+      window.location.href='https://elfursan.com/admin'
+     
     }
      else{
         alert("تأكد من صحة البريد والرقم السري")

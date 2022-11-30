@@ -28,7 +28,7 @@ export default function Home({getdata}) {
       </Head>
           <Cover data={getdata.getcov} />
           <div className={styles.container}>
-          <NEw data={getdata.getnew} />
+          <NEw data={getdata.getinfo} />
           <About data={getdata.getinfo}/>
           <Productes data={getdata.products} />
           <Partener data={getdata.getpart}/>
