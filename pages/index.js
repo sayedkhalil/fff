@@ -18,6 +18,7 @@ export default function Home({getdata}) {
       <Head>
         <title>{getdata.getinfo.name}</title>
         <meta name="description" content={getdata.getinfo.des} />
+        <meta name="p:domain_verify" content="b5d61cc13c20ca2388af6cb4cde318e8"/>
         <meta name="keywords" content={getdata.getinfo.key} />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
