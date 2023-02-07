@@ -25,7 +25,18 @@ export default function Home({getdata}) {
         <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet"></link>
         <link rel="icon" href={getdata.getinfo.logo} type="image/x-icon" />
         <meta name="google-site-verification" content="_OtuybINzdg_u7HN4n2xCk83du_TC8CdaKcPR0p-2Bg" />
-           
+           <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YDXR89E4M"></script>
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9YDXR89E4M');`}}></script>
+ <script async src="https://www.googletagmanager.com/gtag/js?id=AW-337638121"></script>
+        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-337638121');`}}></script>
       </Head>
           <Cover data={getdata.getcov} />
           <div className={styles.container}>
